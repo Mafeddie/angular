@@ -1,0 +1,44 @@
+<div class="container">
+
+<mat-card class="example-card">
+    <mat-card-header>
+   
+      <mat-card-title>E-commerce</mat-card-title>
+      <mat-card-subtitle>Welcome back! Please login to continue.</mat-card-subtitle>
+    </mat-card-header>
+     <mat-card-content>
+        <div>
+            <form class="example-form">
+                <mat-form-field class="example-full-width" appearance="fill">
+                  <mat-label>Email</mat-label>
+                  <mat-icon matPrefix>mail outline</mat-icon>&nbsp;
+                  <input type="email" matInput [formControl]="emailFormControl" placeholder="Ex. pat@example.com">
+                  <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+                    Please enter a valid email address
+                  </mat-error>
+                  <mat-error *ngIf="emailFormControl.hasError('required')">
+                    Email is <strong>required</strong>
+                  </mat-error>
+                </mat-form-field>
+
+                <br>
+                <mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>password</mat-label>
+                    <mat-icon matPrefix>mail outline</mat-icon>&nbsp;
+                    <input type="password" matInput [formControl]="passwordFormControl" >
+                   
+                  </mat-form-field>
+
+
+
+
+              </form>
+        </div>
+    </mat-card-content>
+    <mat-card-actions>
+      
+      <button mat-button>Sign In</button>
+    </mat-card-actions>
+  </mat-card>
+  <div><Span>New to Ecommerce?</Span><button>Sign Up</button></div>
+</div>
