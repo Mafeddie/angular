@@ -19,6 +19,7 @@ import {FormControl, Validators} from '@angular/forms';
 import { AddCategoryComponent } from './add-category/add-category.component';
 import { AddProductComponent } from './add-product/add-product.component';
 import { ProductListComponent } from './product-list/product-list.component';
+import { MinicardComponent } from './minicard/minicard.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { ProductListComponent } from './product-list/product-list.component';
     NavComponent,
     AddCategoryComponent,
     AddProductComponent,
-    ProductListComponent
+    ProductListComponent,
+    MinicardComponent
   ],
   imports: [
     BrowserModule,
